@@ -2,6 +2,7 @@
     "name": "osti/http-client-php",
     "description": "HTTP client lib with PHP",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Osti\\HttpClientPhp\\": "src/"

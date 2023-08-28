@@ -14,7 +14,6 @@ composer require osti/http-client-php
 ## Usage
 Here's an example of how to use the `HttpClient` class to make an HTTP GET request:
 ```php
-<?php
 use HttpClient;
 
 // Create an instance of HttpClient
@@ -38,7 +37,6 @@ if ($response !== false) {
 The constructor of the `HttpClient` class accepts two optional parameters: `$cookies` and `$verify`. Setting $cookies to `true` will enable the use of cookies, and a temporary file will be created to store them. Setting `$verify` to `true` will enable SSL verification. 
 Here's an example usage:
 ```php
-<?php
 $http = new HttpClient($cookies = true, $verify = true);
 
 ```
@@ -47,7 +45,6 @@ $http = new HttpClient($cookies = true, $verify = true);
 Adds `HTTP headers` to the request. 
 Here's an example:
 ```php
-<?php
 $http->addHeaders([
     'User-Agent' => 'My User Agent',
     'Authorization' => 'Bearer Token123'
@@ -58,7 +55,6 @@ $http->addHeaders([
 Sets the `HTTP request` body. You can specify the parameters to send in the request. If `$needEncode` is set to `true`, the parameters will be encoded as JSON. 
 Here's an example:
 ```php
-<?php
 $http->setBody([
     'query' => ['key' => 'value'],
     'json' => ['data' => 'content']

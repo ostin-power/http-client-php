@@ -1,0 +1,19 @@
+{
+    "name": "osti/http-client-php",
+    "description": "HTTP client lib with PHP",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Osti\\HttpClientPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "osti"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "7.2"
+    }
+}
